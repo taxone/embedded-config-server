@@ -1,14 +1,3 @@
-spring:
-  application:
-    name: myconfigserver
-  profiles:
-    active: composite
-  cloud:
-    config:
-      server:
-        prefix: /config
-        bootstrap: true
-        composite:
-          - type: prova           
+         
 server:
   port: 8888    

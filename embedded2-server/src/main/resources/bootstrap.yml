@@ -1,4 +1,12 @@
 spring:
   application:
-    name: myapp
-
+    name: myconfigserver
+  profiles:
+    active: composite
+  cloud:
+    config:
+      server:
+        prefix: /config
+        bootstrap: true
+        composite:
+          - type: prova 
