@@ -29,8 +29,5 @@ public class Embedded2ServerApplication {
 		
 	}
 	
-	@Bean
-	public ProvaEnvironmentRepositoryFactory provaEnvironmentRepositoryFactory() {
-		return new ProvaEnvironmentRepositoryFactory();
-	}
+
 }

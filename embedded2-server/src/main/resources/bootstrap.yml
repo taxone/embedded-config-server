@@ -9,4 +9,4 @@ spring:
         prefix: /config
         bootstrap: true
         composite:
-          - type: prova 
+          - type: prova
