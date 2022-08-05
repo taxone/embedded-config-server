@@ -1,14 +1,9 @@
-spring:
-  application:
-    name: myconfigserver
-  profiles:
-    active: composite
-  cloud:
-    config:
-      server:
-        prefix: /config
-        bootstrap: true
-        composite:
-          - type: prova
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - refresh
+        - health    
 server:
   port: 8888    

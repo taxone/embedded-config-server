@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Bean;
 import lombok.extern.slf4j.Slf4j;
 
 @SpringBootApplication
-@EnableConfigServer
+//@EnableConfigServer
 @Slf4j
 public class Embedded2ServerApplication {
 

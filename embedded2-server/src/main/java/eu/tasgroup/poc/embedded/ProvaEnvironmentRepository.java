@@ -1,5 +1,7 @@
 package eu.tasgroup.poc.embedded;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -18,7 +20,7 @@ public class ProvaEnvironmentRepository implements EnvironmentRepository {
 		Environment environment = new Environment(application, profiles, null, null, null);
 		
 		Map<String, Object> map = new HashMap<>();
-		map.put("pippo.name", "ciao");
+		map.put("pippo.name", LocalDateTime.now().toString());
 		PropertySource ps = new PropertySource("test", map );
 		environment.add(ps );
 		
